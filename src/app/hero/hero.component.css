@@ -7,7 +7,7 @@
 .heroes li{
     display: flex;
 }
-.heroes button{
+.heroes a{
     flex: 1;
     cursor: pointer;
     position: relative; left: 0;
@@ -18,26 +18,29 @@
     display: flex;
     align-items: stretch;
     height: 1.8em;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(130, 86, 86);
 }
-.heroes button:hover{
-    color: #1294d5;
+.heroes a:hover{
+    color: black;
     background-color: #e6e6e6;
     left: 1em;
 }
-.heroes button:active{
+.heroes a:active{
     color: #2c3a41;
     background-color: #e6e6e6;
     left: .1em;
 }
-.heroes button.selected{
+.heroes a.selected{
     color: white;
     background-color: black;
 }
-.heroes button.selected:hover{
+.heroes a.selected:hover{
     background-color: #6e2a2a;
     color: white;
 }
-.heroes button.selected:active{
+.heroes a.selected:active{
     background-color: black;
     color: white;
 }
